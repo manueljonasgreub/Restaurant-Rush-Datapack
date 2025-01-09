@@ -1,0 +1,26 @@
+execute as @e[tag=pantry_placer] at @s positioned ~ ~ ~ run summon block_display ~-0.2 ~0.2 ~ {Tags: ["pantry_b", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, block_state: {Name: "polished_deepslate"}}
+execute as @e[tag=pantry_placer] at @s positioned ~ ~ ~ run summon block_display ~-0.8 ~0.2 ~ {Tags: ["pantry_b", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, block_state: {Name: "polished_deepslate"}}
+execute as @e[tag=pantry_placer] at @s positioned ~ ~ ~ run summon block_display ~0.4 ~0.2 ~ {Tags: ["pantry_b", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, block_state: {Name: "polished_deepslate"}}
+execute as @e[tag=pantry_placer] at @s positioned ~ ~ ~ run summon block_display ~-0.2 ~-0.4 ~ {Tags: ["pantry_b", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, block_state: {Name: "polished_deepslate"}}
+execute as @e[tag=pantry_placer] at @s positioned ~ ~ ~ run summon block_display ~-0.8 ~-0.4 ~ {Tags: ["pantry_b", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, block_state: {Name: "polished_deepslate"}}
+execute as @e[tag=pantry_placer] at @s positioned ~ ~ ~ run summon block_display ~0.4 ~-0.4 ~ {Tags: ["pantry_b", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, block_state: {Name: "polished_deepslate"}}
+
+execute as @e[tag=pantry_placer] at @s positioned ~-0.6 ~0.4 ~0.1 run summon item_display ~ ~ ~ {Rotation: [-180f, 0f], Tags: ["pantry_item", "pantry_item1", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, item: {id: "minecraft:baked_potato", Count: 1b}}
+execute as @e[tag=pantry_placer] at @s positioned ~ ~0.4 ~0.1 run summon item_display ~ ~ ~ {Rotation: [-180f, 0f], Tags: ["pantry_item", "pantry_item2", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, item: {id: "minecraft:bread", Count: 1b}}
+execute as @e[tag=pantry_placer] at @s positioned ~0.6 ~0.4 ~0.1 run summon item_display ~ ~ ~ {Rotation: [-180f, 0f], Tags: ["pantry_item", "pantry_item3", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, item: {id: "minecraft:mushroom_stew", Count: 1b}}
+execute as @e[tag=pantry_placer] at @s positioned ~-0.6 ~-0.2 ~0.1 run summon item_display ~ ~ ~ {Rotation: [-180f, 0f], Tags: ["pantry_item", "pantry_item4", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, item: {id: "minecraft:apple", Count: 1b}}
+execute as @e[tag=pantry_placer] at @s positioned ~ ~-0.2 ~0.1 run summon item_display ~ ~ ~ {Rotation: [-180f, 0f], Tags: ["pantry_item", "pantry_item5", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, item: {id: "minecraft:cookie", Count: 1b}}
+execute as @e[tag=pantry_placer] at @s positioned ~0.6 ~-0.2 ~0.1 run summon item_display ~ ~ ~ {Rotation: [-180f, 0f], Tags: ["pantry_item", "pantry_item6", "opened"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [0.4f, 0.4f, 0.1f]}, item: {id: "minecraft:carrot", Count: 1b}}
+
+execute as @e[tag=pantry_item1] at @s positioned ~ ~-0.2 ~-0.1 run summon interaction ~ ~ ~ {width: 0.4f, height: 0.4f, response: 1b, Tags: ["pantry_i", "pantry_i1"]}
+execute as @e[tag=pantry_item2] at @s positioned ~ ~-0.2 ~-0.1 run summon interaction ~ ~ ~ {width: 0.4f, height: 0.4f, response: 1b, Tags: ["pantry_i", "pantry_i2"]}
+execute as @e[tag=pantry_item3] at @s positioned ~ ~-0.2 ~-0.1 run summon interaction ~ ~ ~ {width: 0.4f, height: 0.4f, response: 1b, Tags: ["pantry_i", "pantry_i3"]}
+execute as @e[tag=pantry_item4] at @s positioned ~ ~-0.2 ~-0.1 run summon interaction ~ ~ ~ {width: 0.4f, height: 0.4f, response: 1b, Tags: ["pantry_i", "pantry_i4"]}
+execute as @e[tag=pantry_item5] at @s positioned ~ ~-0.2 ~-0.1 run summon interaction ~ ~ ~ {width: 0.4f, height: 0.4f, response: 1b, Tags: ["pantry_i", "pantry_i5"]}
+execute as @e[tag=pantry_item6] at @s positioned ~ ~-0.2 ~-0.1 run summon interaction ~ ~ ~ {width: 0.4f, height: 0.4f, response: 1b, Tags: ["pantry_i", "pantry_i6"]}
+
+execute as @e[tag=pantry_placer] at @s positioned ~-0.9 ~-0.5 ~ run summon block_display ~ ~ ~ {Tags: ["pantry_a"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [0f, 0f, 0f], scale: [1.8f, 1.2f, 0.05f]}, block_state: {Name: "mud"}}
+
+#original: 6x barrel 1x spruce planks
+
+

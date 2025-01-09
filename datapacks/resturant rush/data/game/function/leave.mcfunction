@@ -1,0 +1,6 @@
+##
+ # leave.mcfunction
+ # 
+ #
+ # Created by .
+##

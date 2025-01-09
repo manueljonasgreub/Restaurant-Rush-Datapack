@@ -1,0 +1,42 @@
+execute as @e[tag=needFood] at @s store result score @s food run random value 1..18
+execute as @e[tag=needFood] at @s if score #gameTime data matches 280.. run scoreboard players set @s food 5
+
+execute as @e[tag=needFood] at @s if score @s food matches 1 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Flounder Fish","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 2 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Cooked Porkchop","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 3 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Cooked Mutton","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 4 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Cooked Steak","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 5 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Cooked Chicken","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 6 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Braised Rabbit","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 7 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Milk","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 8 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Water","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 9 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Snow Cone","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 10 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Vanilla Cake","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 11 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Seedless Watermelon","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 12 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Pumpkin Pie","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 13 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Stuffed Potato","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 14 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Garlic Bread","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 15 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Mushroom Soup","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 16 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Shiny Apple","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 17 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Chocolate Cookie","color":"white"}'}
+execute as @e[tag=needFood] at @s if score @s food matches 18 run summon armor_stand ~ ~ ~ {CustomNameVisible: 1b, NoGravity: 1b, Silent: 1b, Invulnerable: 1b, Invisible: 1b, Tags: ["customer_text"], CustomName: '{"text":"Raw Carrot","color":"white"}'}
+
+
+
+#execute as @e[tag=needFood] at @s if score @s food matches 1 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Flounder Fish","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 2 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Cooked Porkchop","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 3 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Cooked Mutton","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 4 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Cooked Steak","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 5 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Cooked Chicken","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 6 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Braised Rabbit","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 7 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Milk","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 8 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Water","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 9 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Snow Cone","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 10 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Vanilla Cake","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 11 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Seedless Watermelon","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 12 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Pumpkin Pie","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 13 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Stuffed Potato","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 14 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Garlic Bread","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 15 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Mushroom Soup","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 16 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Shiny Apple","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 17 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Chocolate Cookie","color":"white"}'}
+#execute as @e[tag=needFood] at @s if score @s food matches 18 run summon text_display ~ ~2.3 ~ {NoGravity: 1b, Silent: 1b, Tags: ["customer_text"], text: '{"text":"Raw Carrot","color":"white"}'}
