@@ -27,6 +27,7 @@ scoreboard objectives remove currentCustomers
 scoreboard objectives remove completedFood
 scoreboard objectives remove foodCount
 scoreboard objectives remove onLeave
+scoreboard objectives remove lobbyjump
 bossbar remove timer
 tag @a remove player
 tag @a remove player1
@@ -89,9 +90,12 @@ scoreboard objectives add currentCustomers dummy
 scoreboard objectives add completedFood dummy
 scoreboard objectives add foodCount dummy
 scoreboard objectives add onLeave minecraft.custom:leave_game
+scoreboard objectives add lobbyjump dummy
 bossbar add timer "Timer"
 bossbar set minecraft:timer max 300
 bossbar set minecraft:timer color red
+function lobbyjump:resetmarker
+
 
 # DinkDonk ahpasse wenn Map grösser wird DinkDonk DinkDonk DinkDonkDinkDonkDinkDonkDinkDonkDinkDonk
 forceload add 10009 10010 9626 9975

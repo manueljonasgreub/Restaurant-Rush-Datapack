@@ -17,3 +17,5 @@ effect give @a saturation infinite 255 true
 
 execute as @e[tag=lobby_jump_join] at @s if data entity @s interaction on target run function lobbyjump:join
 execute as @e[tag=lobby_jump_join] at @s if data entity @s interaction run data remove entity @s interaction
+
+execute as @e[tag=lobby_jump] at @s run particle heart ~ ~ ~
