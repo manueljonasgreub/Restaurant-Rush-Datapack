@@ -1,18 +1,11 @@
-tp @a 9831 0 10014
+execute if score #gameRunning data matches 1 run tellraw @s {"color": "red","text": "Es läuft bereits ein Spiel!"}
+
+execute unless score #gameRunning data matches 1 run tp @a 9831 0 10014
+execute unless score #gameRunning data matches 1 run schedule function game:startactutally 10s
+
 scoreboard players set #gameRunning data 1
-recipe give @a *
 
-scoreboard players set #totalPlayerCount data 0
-scoreboard players set #team1 data 0
-scoreboard players set #team2 data 0
-scoreboard players set #team3 data 0
-scoreboard players set #team4 data 0
-scoreboard players set #team5 data 0
-scoreboard players set #team6 data 0
-scoreboard players set #team7 data 0
-scoreboard players set #team8 data 0
-execute as @a[limit=8,sort=random] run scoreboard players add #allPlayers data 1
 
-function game:selectplayers
 
-schedule function game:startagain 1t
+
+

@@ -19,3 +19,7 @@ execute as @e[tag=lobby_jump_join] at @s if data entity @s interaction on target
 execute as @e[tag=lobby_jump_join] at @s if data entity @s interaction run data remove entity @s interaction
 
 execute as @e[tag=lobby_jump] at @s run particle heart ~ ~ ~
+
+
+execute as @e[tag=lobby_start_npc,type=interaction] at @s if data entity @s interaction run schedule function game:start 1t
+execute as @e[tag=lobby_start_npc,type=interaction] at @s if data entity @s interaction run data remove entity @s interaction

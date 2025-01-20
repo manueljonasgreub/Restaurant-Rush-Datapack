@@ -10,6 +10,7 @@ execute as @e[tag=table_interaction] at @s if entity @e[tag=customer_marker5,dis
 execute as @e[tag=table_interaction] at @s if entity @e[tag=customer_marker6,distance=..23] run setblock ~ ~ ~ light_blue_carpet
 execute as @e[tag=table_interaction] at @s if entity @e[tag=customer_marker7,distance=..23] run setblock ~ ~ ~ purple_carpet
 execute as @e[tag=table_interaction] at @s if entity @e[tag=customer_marker8,distance=..23] run setblock ~ ~ ~ pink_carpet
+kill @e[tag=lobby_start_npc]
 
 
 scoreboard objectives remove data
@@ -98,7 +99,10 @@ function lobbyjump:resetmarker
 
 
 # DinkDonk ahpasse wenn Map grösser wird DinkDonk DinkDonk DinkDonkDinkDonkDinkDonkDinkDonkDinkDonk
+
 forceload add 10009 10010 9626 9975
 
 scoreboard players set @a currentCustomers 0
 
+summon wandering_trader 12 1 -12 {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:1b,CustomNameVisible:1b,PersistenceRequired:1b,NoAI:1b,Rotation:[37F,0F],Tags:["lobby_start_npc"],CustomName:'[{"bold":true,"color":"yellow","text":"CLICK TO PLAY"}]',Offers:{}}
+summon interaction 12 1 -12 {width:1f,height:2f,response:1b,Tags:["lobby_start_npc"]}
