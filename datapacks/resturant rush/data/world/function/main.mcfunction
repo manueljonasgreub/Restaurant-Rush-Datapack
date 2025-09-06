@@ -1,6 +1,3 @@
-#execute as @e[tag=customer_text] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
-#execute as @e[tag=customer_text2] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
-#execute as @e[tag=customer_text3] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
 execute as @e[tag=customer_countdown] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
 execute as @e[tag=table_text] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
 
@@ -14,11 +11,6 @@ execute as @e[type=snowball] at @s run give @p[gamemode=!creative,gamemode=!spec
 execute as @e[type=snowball] at @s run kill @s
 
 effect give @a saturation infinite 255 true
-
-execute as @e[tag=lobby_jump_join] at @s if data entity @s interaction on target run function lobbyjump:join
-execute as @e[tag=lobby_jump_join] at @s if data entity @s interaction run data remove entity @s interaction
-
-execute as @e[tag=lobby_jump] at @s run particle heart ~ ~ ~
 
 
 execute as @e[tag=lobby_start_npc,type=interaction] at @s if data entity @s interaction run schedule function game:start 1t

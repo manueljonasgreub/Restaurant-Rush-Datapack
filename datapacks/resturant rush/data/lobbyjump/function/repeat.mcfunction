@@ -1,2 +1,0 @@
-execute as @a[scores={lobbyjump=1}] at @s if block ~ ~-1 ~ red_wool run function lobbyjump:newblock {"id":"1", "color":"red"}
-execute as @a[scores={lobbyjump=1}] at @s if block ~ ~-1 ~ red_wool run setblock ~ ~-1 ~ red_concrete
