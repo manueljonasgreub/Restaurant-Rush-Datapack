@@ -9,6 +9,15 @@ Restaurant Rush is a fast-paced Minecraft mini-game where you serve villagers, c
 - If anything isn’t working properly, use the command `/reload`
 - No mods required, vanilla-compatible
 
+## Installation
+
+- Go to the Releases page of this project
+- Download `WorldDownload_v1.0.0.zip` (ignore the auto-generated “Source code” files)
+- Right-click the file → Extract All…
+- Copy the extracted folder into your Minecraft saves folder
+  - Win + R → type `%appdata%/.minecraft/saves`
+- Start Minecraft and the world should appear in your Singleplayer menu
+
 ## Game Principle
 
 In Restaurant Rush, villagers enter your restaurant and place food orders. Your task is to deliver the correct dishes as quickly as possible. The faster you serve your customers, the better your score.
