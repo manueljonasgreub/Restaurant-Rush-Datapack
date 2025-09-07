@@ -1,5 +1,6 @@
 recipe give @a *
 
+
 scoreboard players set #totalPlayerCount data 0
 scoreboard players set #team1 data 0
 scoreboard players set #team2 data 0
